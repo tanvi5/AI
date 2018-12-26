@@ -1,0 +1,69 @@
+Traceback (most recent call last):
+  File "./route.py", line 359, in <module>
+    solution = solve_BFS(graph, start_city, end_city, cost_function)
+  File "./route.py", line 123, in solve_BFS
+    successors = find_successor_by_cost(graph, next_node, cost_function)
+  File "./route.py", line 109, in find_successor_by_cost
+    return successors;
+UnboundLocalError: local variable 'successors' referenced before assignment
+Traceback (most recent call last):
+  File "./route.py", line 359, in <module>
+    solution = solve_BFS(graph, start_city, end_city, cost_function)
+  File "./route.py", line 123, in solve_BFS
+    successors = find_successor_by_cost(graph, next_node, cost_function)
+  File "./route.py", line 109, in find_successor_by_cost
+    return successors;
+UnboundLocalError: local variable 'successors' referenced before assignment
+
+---- Test Case #1
+./route.py Bloomington,_Indiana Indianapolis,_Indiana bfs segments
+No solution got after running your code. Usually it is because your code encountered some error when executed. Please debug it and try again.
+
+---- Test Case #2
+./route.py Cleveland,_Ohio Wooster,_Ohio bfs segments
+No solution got after running your code. Usually it is because your code encountered some error when executed. Please debug it and try again.
+
+---- Test Case #4
+./route.py Cleveland,_Ohio Wooster,_Ohio uniform distance
+Congratulations! Your output  looks great! :)
+
+---- Test Case #5
+./route.py Cleveland,_Ohio Wooster,_Ohio astar distance
+Congratulations! Your output  looks great! :)
+
+---- Test Case #6
+./route.py Bloomington,_Indiana Wooster,_Ohio uniform distance
+Congratulations! Your output  looks great! :)
+
+---- Test Case #7
+./route.py Wooster,_Ohio Bloomington,_Indiana uniform distance
+Congratulations! Your output  looks great! :)
+
+---- Test Case #8
+./route.py Cleveland,_Ohio Wooster,_Ohio astar time
+Your code output: no 93 1.66 Cleveland,_Ohio Elyria,_Ohio North_Ridgeville,_Ohio Strongsville,_Ohio Weymouth,_Ohio Westfield_Center,_Ohio Wooster,_Ohio
+We expected: yes 62.0 -1 (path with 5 segments)
+Incorrect number of segments, not matching expectation
+
+---- Test Case #9
+./route.py Cleveland,_Ohio Wooster,_Ohio uniform time
+Congratulations! Your output  looks great! :)
+
+---- Test Case #10
+./route.py Wooster,_Ohio Bloomington,_Indiana uniform time
+Congratulations! Your output  looks great! :)
+
+---- Test Case #11
+./route.py Wooster,_Ohio Bloomington,_Indiana astar time
+Your code output: no 333 6.87 Wooster,_Ohio Mt._Vernon,_Ohio Berkshire,_Ohio Delaware,_Ohio Marysville,_Ohio Springfield,_Ohio Fairborn,_Ohio Dayton,_Ohio Richmond,_Indiana Spiceland,_Indiana Jct_I-70_&_I-465_E,_Indiana Indianapolis,_Indiana Jct_I-70_&_I-465_W,_Indiana Cloverdale,_Indiana Romona,_Indiana Spencer,_Indiana Bloomington,_Indiana
+We expected: yes 320.0 -1 (path with 20 segments)
+Incorrect number of segments, not matching expectation
+
+---- Test Case #12
+./route.py Wooster,_Ohio Bloomington,_Indiana bfs time
+Congratulations! Your output  looks great! :)
+
+---- Test Case #13
+./route.py Wooster,_Ohio Bloomington,_Indiana bfs distance
+Congratulations! Your output  looks great! :)
+Passed  9  of 13 tests (1 given free)
